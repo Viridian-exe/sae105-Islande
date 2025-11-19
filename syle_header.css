@@ -1,0 +1,19 @@
+header {
+    background-color: #4D5870;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex; /* Ajouté pour mettre les éléments en ligne */
+    list-style-type: none;
+    padding: 0; /* Ajouté pour enlever le padding par défaut */
+    margin: 0; /* Ajouté pour enlever la marge par défaut */
+}
+
+nav ul li {
+    margin: 10px 10px;
+}
