@@ -63,6 +63,7 @@ body > footer > details > summary
 body > footer > details > div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 body > footer > details > div > img
