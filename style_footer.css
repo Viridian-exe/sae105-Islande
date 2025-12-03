@@ -33,26 +33,15 @@ body>footer>div>div>p {
 }
 
 body>footer>div>div>div {
-    padding-left: 50px;
+    padding-left: 90px;
     display: flex;
     align-items: end;
+    gap: 8px;
 }
 
 body>footer>div>div>div>img {
-    width: 70px;
-    height: 80px;
-}
-
-body>footer>div>div>div>img:nth-child(2) {
-    width: 70px;
-    height: 68px;
-    padding-bottom: 8px;
-}
-
-body>footer>div>div>div>img:nth-child(3) {
-    width: 70px;
-    height: 66px;
-    padding-bottom: 8px;
+    width: 60px;
+    height: 60px;
 }
 
 body>footer>div>figure>img {
@@ -66,7 +55,19 @@ body>footer>div>figure>img:last-child {
     height: 100px;
 }
 
-body > footer > summary
+body > footer > details > summary
 {
-    padding:5px,0,0,50px;
+    padding-top: 7px;
 }
+
+body > footer > details > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+body > footer > details > div > img
+{
+    height: 30px;
+    width: 30px;
+}
+
