@@ -286,11 +286,6 @@ main {
     border-bottom: none;
 }
 
-main > hr {
-    border-width: 3px;
-    color: black;
-}
-
 body > main > section {
     position: relative;
 }
