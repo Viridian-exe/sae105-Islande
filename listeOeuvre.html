@@ -1,157 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css"
-        href="Acceuil.css" >
-        <title>Site Touristique Islande</title>
-    </head>
-    <body>
-        <header>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test Affichage Islande</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
             <div>
-                <div>
-                    <h1 id="haut-page">ISLANDE</h1>
-                    <p>Office Du Tourisme</p>
-                </div>
-                <figure>
-                    <img src="Images/Média.jpeg" alt="LogoImages">
-                </figure>
+                <h1>ISLANDE</h1>
+                <p>Office Du Tourisme</p>
             </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#Lieux">Lieux</a></li>
-                    <li><a href="#Personnage">Personnages</a></li>
-                    <li><a href="#Oeuvres">Oeuvres</a></li>
-                </ul>
-            </nav>
-            
-        </header>
-        <main id="Accueil">
+            <figure>
+                <img src="Images/media.jpeg" alt="LogoImages">
+            </figure>
+        </div>
 
-            <nav class="pointeurHautPage">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="listeLieux.html">Lieux</a></li>
+                <li><a href="listePersonages.html">Personnages</a></li>
+                <li><a href="listeOeuvre.html">Oeuvres</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="haut-page">LES OEUVRES ISLANDAISES</h1>
+        <section>
+            <h2>Découvrez notre sélection des trésors culturels Islandais</h2>
+            
+            <ul>
+                <li>
+                    <img src="Images/puceIslande.png" alt="puce"><strong>Sculptures</strong>
+                    <ul>
+                        <li><img src="Images/puceIslandeRond.png" alt="puce">Le voyageur du soleil</li>
+                        <li><img src="Images/puceIslandeRond.png" alt="puce">Floki aux corbeaux</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <img src="Images/puceIslande.png" alt="puce"><strong>Tableaux</strong>
+                    <ul>
+                        <li><img src="Images/puceIslandeRond.png" alt="puce"><a class="oeuvreAmazone" href="Amazone">La femme amazonne de la montagne</a></li>
+                        <li><img src="Images/puceIslandeRond.png" alt="puce">La fenêtre de l’espoir</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <img src="Images/puceIslande.png" alt="puce"><strong>Livres</strong>
+                    <ul>
+                        <li><img src="Images/puceIslandeRond.png" alt="puce">La cloche d’Islande</li>
+                        <li><img src="Images/puceIslandeRond.png" alt="puce">Rupture</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <img src="Images/puceIslande.png" alt="puce"><strong>Musiques</strong>
+                    <ul>
+                        <li><img src="Images/puceIslandeRond.png" alt="puce">It’s oh so quiet</li>
+                        <li><img src="Images/puceIslandeRond.png" alt="puce">Save yourself</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <img src="Images/puceIslande.png" alt="puce"><strong>Films</strong>
+                    <ul>
+                        <li><img src="Images/puceIslandeRond.png" alt="puce">De l’or et du sang</li>
+                        <li><img src="Images/puceIslandeRond.png" alt="puce">Women at war</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <nav>
                 <a href="#haut-page">
                     <img src="Images/logoPointeur.png" alt="pointeurLogo">
                 </a>
             </nav>
 
-            <!-- Bouton menu hamburger -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            
-            <!-- Menu déroulant -->
-            <nav class="menu-hamburger">
-                <ul>
-                    <li><a href="#Lieux">Lieux</a></li>
-                    <li><a href="#Personnage">Personnages</a></li>
-                    <li><a href="#Oeuvres">Oeuvres</a></li>
-                </ul>
-            </nav>
+        </section>
+    </main>
 
-            <article class="intro">
-                <h1>Accueil</h1>
-                <h3>Bienvenu en République d’Islande (Iceland / Ísland)</h3>
-                <img src="Images/carte.png" alt="carte de l'Islande" class="carteIslande">
-                <p>L'Islande est un pays insulaire situé dans l Atlantique 
-                Nord, très riche géologiquement (volcans, glaciers), 
-                peu peuplé, et très tourné vers les énergies 
-                renouvelables.</p>
-            </article>
-            <article class="geographie">
-                <img src="Images/islande_contour-pop.png" alt="population de l'islande" class="population-contour">
-                <p>Située entre l’océan 
-                Atlantique Nord et 
-                l’océan Arctique, sur la 
-                dorsale médio-atlantique.</p>
-                
-                <p>Superficie d’environ 103 
-                000 km². </p>
-
-                <p>Pays très volcanique, 
-                avec de nombreux 
-                volcans actifs et des 
-                glaciers (par exemple le 
-                Vatnajökull)</p>
-            </article>
-
-            <article class="demographie">
-                <h4>Démographie</h4>
-                <img src="Images/drapeau.png" alt="drapeau de l'islande" class="drapeauIslande">
-                <img src="Images/embleme.png" alt="embleme de l'islande" class="embleme">
-                <img src="Images/monnaie.png" alt="monnaie de l'islande" class="monnaie">
-                <ul>
-                    <li>Population : ~389 444 (2025) selon 
-                    Nations Online.</li>
-                    <li>Densité : très faible (environ 3,78 hab/
-                    km²)</li>
-                </ul>
-            </article>
-
-            <article class="pays">
-                <h4>Pays</h4>
-                <ul>
-                    <li>Hymne national : Lofsöngur (“Song of Praise”), aussi 
-                    appelé O, Gud vors lands.</li>
-                    <li>Couleurs nationales : bleu, blanc, rouge.</li>
-                    <li> Monnaie : la couronne islandaise (Icelandickróna, ISK).</li>
-                    <li>Langue officielle : l’islandais</li>
-                </ul>
-            </article>
-            <article class="histoire">
-                <h4>Histoire</h4>
-                <ul>
-                    <li>Peuplement : l'Islande a été colonisée vers la fin du 9ème siècle par des Novégiens et des Celtes.</li>
-                    <li>Parlement : L'Althingi est l'un des plus anciens parlement au monde, fondé en 930.</li>
-                    <img src="Images/Parlement.png" alt="image du parlement" class="parlement">
-                    <img src="Images/independence.png" alt="image de la fête de l'independence">
-                    <li>Indépendance : L'Islande était sous domination danoise, puis est devenue république indépendante le 17 juin 1944 suit à la 2nd guerre mondiale. <br> <em>17 juin jour de fête nationale.</em></li>
-                </ul>
-            </article>
-            <article class="capitale">
-                <h4>Capitale :</h4>
-                <img src="Images/capitale.png" alt="image de la capitale de l'islande" class="capitale">
-                <p><strong>Reykjavik</strong></p>
-            </article>
-            <article class="regiEco">
-                <h4>Régime énergétique / économie :</h4>
-                <ul>
-                    <li>Forte utilisation d'énergies renouvelables : l'Islande produit une large part de son énergie via l'hydroélecrticité et la géothermie</li>
-                    <li>Économie tournéé vers la pêche, l'aluminium, et le tourisme</li>
-                </ul>
-            </article>
-        </main>
-        <footer>
+    <footer>
+        <div>
             <div>
+                <p>Contact :</p>
                 <div>
-                    <p>Contact :</p>
-                    <div>
-                        <img src="Images/logoTwitter.png" alt="LogoTwitter">
-                        <img src="Images/logoAT.png" alt="Logo@">
-                        <img src="Images/insta-logo.png " alt="LogoInstagram">
-                        <img src="Images/logoTelephone.png" alt="LogoTéléphone">
-                    </div>
+                    <img src="Images/logoTwitter.png" alt="LogoTwitter">
+                    <img src="Images/logoAT.png" alt="Logo@">
+                    <img src="Images/insta-logo.png " alt="LogoInstagram">
+                    <img src="Images/logoTelephone.png" alt="LogoTéléphone">
                 </div>
-                <figure>
-                    <img src="Images/logo-iut-lannion.jpg" alt="LogoImagesIUT">
-                    <img src="Images/logoUniversite.png" alt="LogoImagesLogoUniversité">
-                </figure>
             </div>
-            <details open="open">
-                <summary>
-                    Crédits
-                    <hr>
-                </summary>
-                <div>
-                    <p>Maël Le Doaré / Romain Guillouet / Antalole Brabier / Guilhem Simon</p>
-                    <img src="Images/copyrights.png">
-                </div>
+            <figure>
+                <img src="Images/logo-iut-lannion.jpg" alt="LogoImagesIUT">
+                <img src="Images/logoUniversite.png" alt="LogoImagesLogoUniversité">
+            </figure>
+        </div>
+        <details open="open">
+            <summary>
+                Crédits
+            </summary>
+            <hr>
+            <div>
+                <p>Maël Le Doaré / Romain Guillouet / Antalole Brabier / Guilhem Simon</p>
+                <img src="Images/copyrights.png">
+            </div>
 
-            </details>
-        </footer>
-    </body>
+        </details>
+    </footer>
+
+</body>
 </html>
