@@ -556,6 +556,7 @@ main {
 }
 
 main>h1{
+    text-align: center;
     border-bottom: 3px solid #c49a6c;
     border-top: 3px solid #c49a6c;
     padding: 15px;
@@ -571,6 +572,24 @@ main>section {
 }
     
 main>section>h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #c49a6c;
+    padding-bottom: 10px;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+main>section>article>h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #c49a6c;
+    padding-bottom: 10px;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+main>section>aside>h2 {
     text-align: center;
     margin-bottom: 30px;
     border-bottom: 3px solid #c49a6c;
@@ -600,7 +619,28 @@ main > section > article:first-of-type::after {
 
 }
 
-main>section>article>p>span {
+main>section>aside {
+    width: 80%;
+    max-width: 800px;
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+main > section > aside:first-of-type {
+    border-bottom: none; 
+}
+
+main > section > aside:first-of-type::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #4D5870;
+
+}
+
+main>section>aside>p>span {
     border-bottom:2px solid #c49a6c ;
 }
 
