@@ -169,6 +169,14 @@ body {
     color: white; 
 }
 
+@font-face {
+font-family: “Helvetica-Light”;
+src: url("Images/Helvetica.ttf") format("ttf"),
+url("Images/Helvetica.ttf") format("ttf");
+font-weight: normal;
+font-style: normal;
+}
+
 /* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- */
 /* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- */
 /* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- */
