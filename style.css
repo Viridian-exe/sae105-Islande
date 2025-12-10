@@ -155,7 +155,7 @@ footer>div>figure>img:last-child {
 
 footer > summary
 {
-    padding:5px,0,0,50px;
+    padding:5px 0 0 50px;
 }
 
 
@@ -1061,4 +1061,29 @@ body > main > nav.pointeurHautPage > a > img {
 body > main > nav.pointeurHautPage > a:hover {
     transform: scale(1.05);
     border-color: #d4aa7c;
+}
+
+/* Zoom sur l'image Amazone woman of the montain avec javascript */
+
+.image{
+    height:355px;
+    width: 540px;
+}
+
+.image:hover{
+    cursor: zoom-in;
+}
+.zoom{
+    border: 11px solid black;
+    z-index: 999;
+    display: block;
+    position: fixed;
+    width: 1080px;
+    height: 710px;
+    left: 25em;
+    top: 5em;
+}
+
+.zoom:hover{
+    cursor: zoom-out;
 }
