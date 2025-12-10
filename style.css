@@ -328,6 +328,31 @@ body > main > section > ul > li > ul > li {
     margin: 7px 0;
 }
 
+body > main > section > article > ul > li,
+body > main > section > article > ul > li > ul > li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body > main > section > article > ul > li > img,
+body > main > section > article > ul > li > ul > li img {
+    height: 25px;
+    width: 30px;
+    margin: 15px 30px;
+}
+
+body > main > section > article > ul > li > ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    flex-basis: 100%;
+    margin: 1em 2em;
+}
+
+body > main > section > article > ul > li > ul > li {
+    margin: 7px 0;
+}
 body > main > section > nav {
     position: absolute;
     right: 0;
@@ -442,10 +467,6 @@ body > footer > details > div > img {
 /* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
 /* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
 /* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
-
-html {
-    scroll-behavior: smooth;
-}
 
 body {
     background-color: #333;
