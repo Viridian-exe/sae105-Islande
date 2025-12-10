@@ -476,35 +476,50 @@ body > footer > details > div > img {
 /* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
 /* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
 
+/* --- VARIABLES & RESET --- */
+:root {
+    --couleur-or: #c49a6c;
+    --couleur-bleu: #4D5870;
+    --couleur-fond-sombre: #333;
+    --couleur-fond-gris: #f4f4f4;
+    --police-principale: sans-serif;
+    --police-titre: serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
-    background-color: #333;
+    background-color: var(--couleur-fond-sombre);
     margin: 0;
-    font-family: 'police';
+    font-family: var(--police-principale);
     color: white;
 }
 
+/* --- HEADER --- */
 header {
-    background-color: #4D5870;
-    border: 4px solid #c49a6c;
+    background-color: var(--couleur-bleu);
+    border: 4px solid var(--couleur-or);
     border-radius: 30px 30px 0 0;
     padding: 30px;
     margin: 30px auto 0 auto;
     max-width: 1000px;
 }
 
-header>div {
+.header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
 }
 
-header>div>div {
-    display: flex;
-    flex-direction: column;
-}
-
-header>div>div>h1 {
+.titre-principal h1 {
     margin: 0;
     font-size: 4.5em;
     font-weight: normal;
@@ -512,7 +527,7 @@ header>div>div>h1 {
     line-height: 1;
 }
 
-header>div>div>p {
+.titre-principal p {
     margin: 10px 0 0 5px;
     font-size: 1.1em;
     text-transform: uppercase;
@@ -520,11 +535,11 @@ header>div>div>p {
     color: #ddd;
 }
 
-header>div>figure {
+.logo-header {
     margin: 0;
 }
 
-header>div>figure>img {
+.logo-header img {
     border-radius: 33px;
     display: block;
     width: 250px;
@@ -533,11 +548,8 @@ header>div>figure>img {
     background-color: #000;
 }
 
-header>nav {
-    width: 100%;
-}
-
-header>nav>ul {
+/* --- NAVIGATION --- */
+header nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
@@ -545,38 +557,40 @@ header>nav>ul {
     border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-header>nav>ul>li {
+header nav ul li {
     flex: 1;
     border-right: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-header>nav>ul>li:last-child {
+header nav ul li:last-child {
     border-right: none;
 }
 
-header>nav>ul>li>a {
+header nav ul li a {
     display: block;
     text-align: center;
     padding: 15px 0;
     text-decoration: none;
     color: white;
-    font-family: serif;
+    font-family: var(--police-titre);
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background-color 0.3s;
 }
 
-header>nav>ul>li>a:hover {
+header nav ul li a:hover,
+header nav ul li a.active {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* --- MAIN CONTENT --- */
 main {
     background-color: white;
     color: #000;
     padding: 30px;
     margin: 0 auto;
     max-width: 1000px;
-    border: 4px solid #c49a6c;
+    border: 4px solid var(--couleur-or);
     border-top: none;
     border-bottom: none;
     display: flex;
@@ -584,173 +598,271 @@ main {
     align-items: center;
 }
 
-main>h1{
-    text-align: center;
-    border-bottom: 3px solid #c49a6c;
-    border-top: 3px solid #c49a6c;
+main > h1 {
+    border-bottom: 3px solid var(--couleur-or);
+    border-top: 3px solid var(--couleur-or);
     padding: 15px;
-    font-size: 3em;
+    font-size: 2.5em;
+    text-align: center;
     margin-bottom: 40px;
 }
 
-main>section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Image principale */
+.image-une {
+    margin: 0 0 30px 0;
     width: 100%;
 }
-    
-main>section>h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 3px solid #c49a6c;
-    padding-bottom: 10px;
-    width: fit-content;
-    margin-top: 30px;
+
+.image-une img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 600px;
+    object-fit: cover;
 }
 
-main>section>article>h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 3px solid #c49a6c;
-    padding-bottom: 10px;
-    width: fit-content;
-    margin-top: 30px;
+/* Styles Généraux Sections */
+main section {
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-main>section>aside>h2 {
+main section h2 {
     text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 3px solid #c49a6c;
+    margin: 0 auto 30px auto;
+    border-bottom: 3px solid var(--couleur-or);
     padding-bottom: 10px;
     width: fit-content;
-    margin-top: 30px;
+    color: var(--couleur-bleu);
+    text-transform: uppercase;
 }
 
-main>section>article {
-    width: 80%;
-    max-width: 800px;
+/* Style des paragraphes généraux */
+article p {
     text-align: justify;
-    margin-bottom: 20px;
     line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-main > section > article:first-of-type {
-    border-bottom: none; 
+article p span {
+    border-bottom: 2px solid var(--couleur-or);
+    font-weight: bold;
 }
 
-main > section > article:first-of-type::after {
+/* --- SECTION HISTOIRE (PLEINE LARGEUR) --- */
+/* C'est ici que j'ai fait le changement pour que ça prenne toute la place */
+.histoire article {
+    width: 100%;       
+    max-width: 100%;   
+    margin-bottom: 20px;
+}
+
+/* Séparateur stylé */
+.histoire article:first-of-type::after {
     content: "";
     display: block;
-    width: 50%;
-    height: 3px;
-    background-color: #4D5870;
-
+    width: 100%;
+    height: 2px;
+    background-color: var(--couleur-bleu);
+    margin: 20px 0;
+    opacity: 0.3;
 }
 
-main>section>aside {
-    width: 80%;
-    max-width: 800px;
-    text-align: justify;
-    margin-bottom: 20px;
-    line-height: 1.6;
+/* --- SECTION GÉOGRAPHIE (FLEXBOX) --- */
+.geo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
-main > section > aside:first-of-type {
-    border-bottom: none; 
+.geo-textes {
+    flex: 1 1 400px; /* Le texte prend plus de place que la carte */
 }
 
-main > section > aside:first-of-type::after {
-    content: "";
+.carte-interactive {
+    flex: 1 1 300px;
+    margin: 0;
+    border: 2px solid var(--couleur-or);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.carte-interactive img {
+    width: 100%;
+    height: auto;
     display: block;
-    width: 50%;
-    height: 3px;
-    background-color: #4D5870;
-
+    transition: transform 0.5s ease;
 }
 
-main>section>aside>p>span {
-    border-bottom:2px solid #c49a6c ;
+.carte-interactive:hover img {
+    transform: scale(1.05); /* Zoom au survol */
 }
 
+.carte-interactive figcaption {
+    background-color: var(--couleur-bleu);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+}
+
+/* --- SECTION ACTIVITÉS (GRID LAYOUT) --- */
+.grille-activites {
+    display: grid;
+    /* Grid responsive sans media queries */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 10px;
+}
+
+.card {
+    background-color: var(--couleur-fond-gris);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(77, 88, 112, 0.2);
+    border-color: var(--couleur-or);
+}
+
+.card h3 {
+    text-align: center;
+    color: var(--couleur-bleu);
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.card figure {
+    margin: 0;
+    height: 180px;
+    border-bottom: 4px solid var(--couleur-or);
+}
+
+.card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 0 20px;
+    font-size: 0.95em;
+    color: #555;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card aside {
+    background-color: var(--couleur-bleu);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.card:hover aside {
+    background-color: var(--couleur-or);
+    transition: background-color 0.3s;
+}
+
+/* --- FOOTER --- */
 footer {
-    background-color: #4D5870;
-    border: 4px solid #c49a6c;
+    background-color: var(--couleur-bleu);
+    border: 4px solid var(--couleur-or);
     border-radius: 0 0 30px 30px;
     padding: 30px;
     margin: 0 auto 30px auto;
     max-width: 1000px;
 }
 
-body>footer>div {
+.footer-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-body>footer>div>div {
-    border: 4px solid #c49a6c;
+.contact-box {
+    border: 3px solid var(--couleur-or);
     border-radius: 33px;
-    width: 450px;
-    height: 140px;
-    align-items: center;
-}
-
-body>footer>div>div>p {
-    padding-left: 10px;
-}
-
-body>footer>div>div>div {
-    padding-left: 90px;
+    padding: 15px 25px;
     display: flex;
-    align-items: end;
-    gap: 8px;
+    flex-direction: column;
 }
 
-body>footer>div>div>div>img {
-    width: 60px;
-    height: 60px;
+.contact-box p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
 }
 
-body>footer>div>figure>img {
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
+.social-icons {
+    display: flex;
+    gap: 10px;
 }
 
-body>footer>div>figure>img:last-child {
-    width: 250px;
-    height: 100px;
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+.social-icons img:hover { transform: scale(1.2); }
+
+.partenaires {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-body>footer>details>summary {
-    padding-top: 7px;
+.partenaires img {
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
 }
 
-body>footer>details>div {
+footer details {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+footer summary {
+    outline: none;
+    font-weight: bold;
+    color: #ddd;
+}
+
+footer hr {
+    border: 0;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 10px 0;
+}
+
+.credits-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.9em;
+    color: #ccc;
 }
 
-body>footer>details>div>img {
-    height: 30px;
-    width: 30px;
-}
-
-.oeuvreAmazone.oeuvreAmazone:visited,
-.oeuvreAmazone.oeuvreAmazone:active,
-.oeuvreAmazone.oeuvreAmazone:link {
-    color: black;
-    text-decoration: none;
-}
-
-.oeuvreAmazone.oeuvreAmazone:hover {
-    text-decoration: #000;
-    background-color: #4D5870;
-    border-radius: 0 100px 100px 0;
-    width: 270px;
-    color: white;
+.credits-content img {
+    height: 25px;
+    width: auto;
 }
 
 /* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- */
