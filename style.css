@@ -165,16 +165,16 @@ footer > summary
 body {
     background-color: #333; 
     margin: 0;
-    font-family: sans-serif;
+    font-family: "police";
     color: white; 
 }
 
 @font-face {
-font-family: “Helvetica-Light”;
-src: url("Images/Helvetica.ttf") format("ttf"),
-url("Images/Helvetica.ttf") format("ttf");
-font-weight: normal;
-font-style: normal;
+    font-family: "police";
+    src: url("Images/4215-font.otf") format("otf"),
+    url("Images/4215-font.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- */
@@ -479,7 +479,7 @@ body > footer > details > div > img {
 body {
     background-color: #333;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'police';
     color: white;
 }
 
