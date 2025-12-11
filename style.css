@@ -9,6 +9,10 @@ body {
     color: white;
 }
 
+main{
+   font-family:'police';
+}
+
 footer {
     background-color: #4D5870;
     border-radius: 30px;
