@@ -89,3 +89,28 @@ transition: transform 0.2s ease;
 width: auto !important;
 height: 50em !important;
 }
+.personnage > section > article:nth-of-type(4) {
+    margin: 20px;                     
+}
+
+.personnage > section > article:nth-of-type(4) > div {
+    display: flex;                   
+    justify-content: center;         
+}
+
+.personnage > section > article:nth-of-type(4) > div > ul {
+    display: flex;                    
+    justify-content: space-between;   
+    list-style-type: none;            
+}
+
+.personnage > section > article:nth-of-type(4) > div > ul > li {
+    width: 30%;                      
+    margin-right: 10px;              
+}
+
+.personnage > section > article:nth-of-type(4) h4 {
+    background-color: #f0f0f0;    
+    padding: 10px;                 
+    border-radius: 5px;            
+}
