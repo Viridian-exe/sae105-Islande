@@ -605,3 +605,29 @@ body > main > nav.pointeurHautPage > a:hover {
     height: 50em !important;
 }
 
+.personnage > section > article:nth-of-type(4) {
+    margin: 20px;                     
+}
+
+.personnage > section > article:nth-of-type(4) > div {
+    display: flex;                    /* Applique flex uniquement à ce conteneur */
+    justify-content: center;          /* Centre les listes dans la largeur disponible */
+}
+
+.personnage > section > article:nth-of-type(4) > div > ul {
+    display: flex;                    /* Permet d'afficher les listes côte à côte */
+    justify-content: space-between;   /* Espace entre les listes */
+    list-style-type: none;            /* Supprime les puces */
+}
+
+.personnage > section > article:nth-of-type(4) > div > ul > li {
+    width: 30%;                       /* Chaque liste prend 30% de la largeur */
+    margin-right: 10px;              /* Espace entre les listes */
+}
+
+.personnage > section > article:nth-of-type(4) h4 {
+    background-color: #f0f0f0;       /* Arrière-plan gris pour les titres */
+    padding: 10px;                    /* Espace autour du texte */
+    border-radius: 5px;              /* Coins arrondis */
+}
+
