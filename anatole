@@ -1,0 +1,91 @@
+/* personage */
+
+
+
+
+
+.personnage > section > img{ 
+float:inline-end;
+height: 10em;
+width: 10em;
+}
+
+
+
+
+
+.personnage > section > article img:nth-of-type(1) {
+position: absolute;
+top: 12em;
+left: 17em; 
+height: 25em;
+width: auto;
+z-index: 1;
+}
+
+
+.personnage > section > article img:nth-of-type(2) {
+position: absolute;
+top: 5em;
+right: 0; 
+height: 30em;
+width: auto;
+}
+
+
+
+
+
+.personnage > section > article img:nth-of-type(3) {
+position: absolute;
+top: 5em;
+left: 0; 
+height: 30em;
+width: auto;
+}
+
+
+
+
+
+.personnage > section > article img:nth-of-type(4) {
+position: absolute;
+bottom: 0;
+left: 0; 
+height: 30em;
+width: auto;
+}
+
+
+
+
+
+.personnage > section > article img:nth-of-type(5) {
+position: absolute;
+bottom: 0;
+right: 0; 
+height: 30em;
+width: auto;
+}
+
+
+
+
+
+.personnage > section > article:nth-of-type(2){
+height: 55em;
+position: relative;
+}
+
+.personnage .zoom {
+border: none !important ;
+z-index: 999 !important;
+display: block;
+position: absolute !important; 
+top: 50% !important; 
+left: 50% !important; 
+transform: translate(-50%, -50%) !important; 
+transition: transform 0.2s ease;
+width: auto !important;
+height: 50em !important;
+}

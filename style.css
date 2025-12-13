@@ -1,16 +1,93 @@
-/* =========================================
-   1. TON NOUVEAU CODE (BASE & FOOTER)
-   ========================================= */
-
-body {
-    background-color: #333;
-    margin: 0;
-    font-family: sans-serif;
-    color: white;
+/* --header --*/
+header {
+    background-color: #4D5870;
+    border: 4px solid #c49a6c;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1500px;
 }
 
-main{
-   font-family:'police';
+/* --- HAUT DU HEADER --- */
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Groupe Titre + Sous-titre */
+header > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+header > div > div > h1 {
+    margin: 0;
+    font-size: 4.5em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+header > div > div > p {
+    margin: 10px 0 0 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ddd;
+}
+
+/* Image */
+header > div > figure {
+    margin: 0;
+}
+
+header > div > figure > img {
+    border-radius: 33px;
+    display: block;
+    width: 250px; 
+    height: 200px;
+    object-fit: cover;
+    background-color: #000; 
+}
+
+/* --- NAVIGATION --- */
+header > nav {
+    width: 100%;
+}
+
+header > nav > ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header > nav > ul > li {
+    flex: 1;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header > nav > ul > li:last-child {
+    border-right: none;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    color: white;
+    font-family: serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+header > nav > ul > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 footer {
@@ -81,48 +158,52 @@ body > footer > details > div > img {
 }
 
 
-/* =========================================
-   2. RESTE DU DESIGN (HEADER, MAIN, ETC.)
-   ========================================= */
 
-html {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
+/* ----  body ---- */
+
+body {
+    background-color: #333; 
+    margin: 0;
+    font-family: "police";
+    color: white; 
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-/* --- FONTS --- */
 @font-face {
     font-family: "police";
-    src: url("Images/4215-font.otf") format("otf");
+    src: url("Images/4215-font.otf") format("otf"),
+    url("Images/4215-font.otf") format("otf");
     font-weight: normal;
     font-style: normal;
 }
 
-/* --- VARIABLES (Gardées pour compatibilité sections internes) --- */
-:root {
-    --couleur-or: #c49a6c;
-    --couleur-bleu: #4D5870;
-    --couleur-fond-sombre: #333;
-    --couleur-fond-gris: #f4f4f4;
-    --police-principale: sans-serif;
-    --police-titre: serif;
+/* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- */
+/* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- */
+/* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- */
+
+
+
+
+/* Ajout pour le défilement fluide */
+html {
+    scroll-behavior: smooth;
 }
 
-/* --- HEADER --- */
+body {
+    background-color: #333;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
 header {
     background-color: #4D5870;
     border: 4px solid #c49a6c;
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0;
     padding: 30px;
-    margin: 30px auto;
-    max-width: 1000px; /* Harmonisé avec le footer */
+    margin: 30px auto 0 auto;
+    max-width: 1000px;
 }
 
-/* Haut du Header */
 header > div {
     display: flex;
     justify-content: space-between;
@@ -164,7 +245,6 @@ header > div > figure > img {
     background-color: #000;
 }
 
-/* Navigation Header */
 header > nav {
     width: 100%;
 }
@@ -202,7 +282,6 @@ header > nav > ul > li > a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* --- MAIN CONTENT (Général) --- */
 main {
     background-color: white;
     color: #000;
@@ -212,19 +291,12 @@ main {
     border: 4px solid #c49a6c;
     border-top: none;
     border-bottom: none;
+}
+
+body > main > section {
     position: relative;
 }
 
-main > h1 {
-    border-bottom: 3px solid #c49a6c;
-    border-top: 3px solid #c49a6c;
-    padding: 15px;
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* Styles spécifiques Sections (Listes, Images) */
 body > main > section > ul {
     list-style-type: none;
     padding-left: 0;
@@ -250,7 +322,75 @@ body > main > section > ul > li > ul > li img {
     margin: 15px 30px;
 }
 
-/* Liens Amazone */
+body > main > section > ul > li > ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0.5em;
+    width: 100%;
+    flex-basis: 100%;
+    margin: 1em 2em;
+}
+
+body > main > section > ul > li > ul > li {
+    margin: 7px 0;
+}
+
+body > main > section > article > ul > li,
+body > main > section > article > ul > li > ul > li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body > main > section > article > ul > li > img,
+body > main > section > article > ul > li > ul > li img {
+    height: 25px;
+    width: 30px;
+    margin: 15px 30px;
+}
+
+body > main > section > article > ul > li > ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    flex-basis: 100%;
+    margin: 1em 2em;
+}
+
+body > main > section > article > ul > li > ul > li {
+    margin: 7px 0;
+}
+body > main > section > nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    pointer-events: none;
+}
+
+body > main > section > nav > a {
+    display: block;
+    position: sticky;
+    top: 150px;
+    width: 50px;
+    height: 50px;
+    pointer-events: auto;
+    transition: transform 0.3s ease-out;
+}
+
+body > main > section > nav > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+body > main > section > nav > a:hover {
+    transform: scale(1.2); 
+}
+
+
+
 .oeuvreAmazone.oeuvreAmazone:visited,
 .oeuvreAmazone.oeuvreAmazone:active,
 .oeuvreAmazone.oeuvreAmazone:link {
@@ -266,23 +406,204 @@ body > main > section > ul > li > ul > li img {
     color: white;
 }
 
-/* --- SECTION GÉOGRAPHIE & HISTOIRE --- */
-.histoire article {
+
+/* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
+/* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
+/* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
+
+/* --- VARIABLES & RESET --- */
+:root {
+    --couleur-or: #c49a6c;
+    --couleur-bleu: #4D5870;
+    --couleur-fond-sombre: #333;
+    --couleur-fond-gris: #f4f4f4;
+    --police-principale: sans-serif;
+    --police-titre: serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--couleur-fond-sombre);
+    margin: 0;
+    font-family: var(--police-principale);
+    color: white;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: var(--couleur-bleu);
+    border: 4px solid var(--couleur-or);
+    border-radius: 30px 30px 0 0;
+    padding: 30px;
+    margin: 30px auto 0 auto;
+    max-width: 1000px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titre-principal h1 {
+    margin: 0;
+    font-size: 4.5em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.titre-principal p {
+    margin: 10px 0 0 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ddd;
+}
+
+.logo-header {
+    margin: 0;
+}
+
+.logo-header img {
+    border-radius: 33px;
+    display: block;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    background-color: #000;
+}
+
+/* --- NAVIGATION --- */
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header nav ul li {
+    flex: 1;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header nav ul li:last-child {
+    border-right: none;
+}
+
+header nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    color: white;
+    font-family: var(--police-titre);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- MAIN CONTENT --- */
+main {
+    background-color: white;
+    color: #000;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+    border: 4px solid var(--couleur-or);
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > h1 {
+    border-bottom: 3px solid var(--couleur-or);
+    border-top: 3px solid var(--couleur-or);
+    padding: 15px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Image principale */
+.image-une {
+    margin: 0 0 30px 0;
     width: 100%;
-    max-width: 100%;
+}
+
+.image-une img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Styles Généraux Sections */
+main section {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+main section h2 {
+    text-align: center;
+    margin: 0 auto 30px auto;
+    border-bottom: 3px solid var(--couleur-or);
+    padding-bottom: 10px;
+    width: fit-content;
+    color: var(--couleur-bleu);
+    text-transform: uppercase;
+}
+
+/* Style des paragraphes généraux */
+article p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+article p span {
+    border-bottom: 2px solid var(--couleur-or);
+    font-weight: bold;
+}
+
+/* --- SECTION HISTOIRE (PLEINE LARGEUR) --- */
+/* C'est ici que j'ai fait le changement pour que ça prenne toute la place */
+.histoire article {
+    width: 100%;       
+    max-width: 100%;   
     margin-bottom: 20px;
 }
 
+/* Séparateur stylé */
 .histoire article:first-of-type::after {
     content: "";
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #4D5870;
+    background-color: var(--couleur-bleu);
     margin: 20px 0;
     opacity: 0.3;
 }
 
+/* --- SECTION GÉOGRAPHIE (FLEXBOX) --- */
 .geo-container {
     display: flex;
     flex-wrap: wrap;
@@ -292,13 +613,13 @@ body > main > section > ul > li > ul > li img {
 }
 
 .geo-textes {
-    flex: 1 1 400px;
+    flex: 1 1 400px; /* Le texte prend plus de place que la carte */
 }
 
 .carte-interactive {
     flex: 1 1 300px;
     margin: 0;
-    border: 2px solid #c49a6c;
+    border: 2px solid var(--couleur-or);
     border-radius: 15px;
     overflow: hidden;
     position: relative;
@@ -313,27 +634,28 @@ body > main > section > ul > li > ul > li img {
 }
 
 .carte-interactive:hover img {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Zoom au survol */
 }
 
 .carte-interactive figcaption {
-    background-color: #4D5870;
+    background-color: var(--couleur-bleu);
     color: white;
     text-align: center;
     padding: 8px;
     font-weight: bold;
 }
 
-/* --- SECTION ACTIVITÉS (GRILLE) --- */
+/* --- SECTION ACTIVITÉS (GRID LAYOUT) --- */
 .grille-activites {
     display: grid;
+    /* Grid responsive sans media queries */
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
     padding: 10px;
 }
 
 .card {
-    background-color: #f4f4f4;
+    background-color: var(--couleur-fond-gris);
     border: 1px solid #ddd;
     border-radius: 15px;
     overflow: hidden;
@@ -345,12 +667,12 @@ body > main > section > ul > li > ul > li img {
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(77, 88, 112, 0.2);
-    border-color: #c49a6c;
+    border-color: var(--couleur-or);
 }
 
 .card h3 {
     text-align: center;
-    color: #4D5870;
+    color: var(--couleur-bleu);
     margin: 15px 0;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -359,7 +681,7 @@ body > main > section > ul > li > ul > li img {
 .card figure {
     margin: 0;
     height: 180px;
-    border-bottom: 4px solid #c49a6c;
+    border-bottom: 4px solid var(--couleur-or);
 }
 
 .card figure img {
@@ -377,7 +699,7 @@ body > main > section > ul > li > ul > li img {
 }
 
 .card aside {
-    background-color: #4D5870;
+    background-color: var(--couleur-bleu);
     color: white;
     text-align: center;
     padding: 12px;
@@ -387,17 +709,264 @@ body > main > section > ul > li > ul > li img {
 }
 
 .card:hover aside {
-    background-color: #c49a6c;
+    background-color: var(--couleur-or);
     transition: background-color 0.3s;
 }
 
-/* --- FONCTIONNALITÉS JS / INTERACTIVES --- */
+/* --- FOOTER --- */
+footer {
+    background-color: var(--couleur-bleu);
+    border: 4px solid var(--couleur-or);
+    border-radius: 0 0 30px 30px;
+    padding: 30px;
+    margin: 0 auto 30px auto;
+    max-width: 1000px;
+}
 
-/* Menu Hamburger */
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-box {
+    border: 3px solid var(--couleur-or);
+    border-radius: 33px;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+.social-icons img:hover { transform: scale(1.2); }
+
+.partenaires {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.partenaires img {
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
+}
+
+footer details {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+footer summary {
+    outline: none;
+    font-weight: bold;
+    color: #ddd;
+}
+
+footer hr {
+    border: 0;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 10px 0;
+}
+
+.credits-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.credits-content img {
+    height: 25px;
+    width: auto;
+}
+
+/* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- */
+/* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- */
+/* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- */
+
+body {
+            background-color: #4D5870;
+            color: white;
+            border: 4px solid #c49a6c;
+            border-radius: 30px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 1000px;; 
+        }
+/* --- HEADER --- */
+header {
+    background-color: #4D5870;
+    border: 4px solid #c49a6c;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+/* --- HAUT DU HEADER --- */
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Groupe Titre + Sous-titre */
+header > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+header > div > div > h1 {
+    margin: 0;
+    font-size: 4.5em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+header > div > div > p {
+    margin: 10px 0 0 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ddd;
+}
+
+/* Image */
+header > div > figure {
+    margin: 0;
+}
+
+header > div > figure > img {
+    border-radius: 33px;
+    display: block;
+    width: 250px; 
+    height: 200px;
+    object-fit: cover;
+    background-color: #000; 
+}
+
+/* --- NAVIGATION --- */
+header > nav {
+    width: 100%;
+}
+
+header > nav > ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header > nav > ul > li {
+    flex: 1;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header > nav > ul > li:last-child {
+    border-right: none;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    color: white;
+    font-family: serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+header > nav > ul > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* --- FOOTER --- */
+footer {
+    background-color: #4D5870;
+    border: 4px solid #c49a6c;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1000px;
+
+}
+
+body>footer>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body>footer>div>div {
+    border: 4px solid #c49a6c;
+    border-radius: 33px;
+    width: 450px;
+    height: 140px;
+    align-items: center;
+}
+
+body>footer>div>div>p {
+    padding-left: 10px;
+}
+
+body>footer>div>div>div {
+    padding-left: 90px;
+    display: flex;
+    align-items: end;
+    gap: 8px;
+}
+
+
+body > footer > details > summary
+{
+    padding-top: 7px;
+}
+
+body > footer > details > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body > footer > details > div > img
+{
+    height: 30px;
+    width: 30px;
+}
+
+/* --- MENU HAMBURGER --- */
+/* Masquer la checkbox */
 #menu-toggle {
     display: none;
 }
 
+/* Bouton hamburger fixe */
 .menu-btn {
     position: fixed;
     top: 20px;
@@ -423,6 +992,7 @@ body > main > section > ul > li > ul > li img {
     transform: scale(1.05);
 }
 
+/* Les trois traits du hamburger */
 .menu-btn span {
     display: block;
     width: 30px;
@@ -432,6 +1002,7 @@ body > main > section > ul > li > ul > li img {
     transition: all 0.3s ease;
 }
 
+/* Menu déroulant */
 .menu-hamburger {
     position: fixed;
     top: 0;
@@ -446,10 +1017,12 @@ body > main > section > ul > li > ul > li img {
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Afficher le menu quand la checkbox est cochée */
 #menu-toggle:checked ~ .menu-hamburger {
     right: 0;
 }
 
+/* Style de la liste du menu */
 .menu-hamburger ul {
     list-style: none;
     padding: 0;
@@ -476,7 +1049,17 @@ body > main > section > ul > li > ul > li img {
     padding-left: 40px;
 }
 
-/* Pointeur haut de page */
+/* Fermer le menu quand on clique sur un lien */
+.menu-hamburger ul li a:active {
+    background-color: rgba(196, 154, 108, 0.4);
+}
+
+/* --- MAIN --- */
+main {
+    position: relative;
+}
+
+/* Navigation pointeur haut de page */
 body > main > nav.pointeurHautPage {
     position: fixed;
     left: 20px;
@@ -512,17 +1095,17 @@ body > main > nav.pointeurHautPage > a:hover {
     border-color: #d4aa7c;
 }
 
-/* Zoom Image */
-.image {
-    height: 355px;
+/* Zoom sur l'image Amazone woman of the montain avec javascript */
+
+.image{
+    height:355px;
     width: 540px;
 }
 
-.image:hover {
+.image:hover{
     cursor: zoom-in;
 }
-
-.zoom {
+.zoom{
     border: 11px solid black;
     z-index: 999;
     display: block;
@@ -533,75 +1116,6 @@ body > main > nav.pointeurHautPage > a:hover {
     top: 5em;
 }
 
-.zoom:hover {
+.zoom:hover{
     cursor: zoom-out;
 }
-
-
-/* personage */
-
-.personnage > section > img{ 
-    float:inline-end;
-    height: 10em;
-    width: 10em;
-}
-
-.personnage > section > article img:nth-of-type(1) {
-    position: absolute;
-    top: 12em;
-    left: 17em; 
-    height: 25em;
-    width: auto;
-    z-index: 1;
-}
-.personnage > section > article img:nth-of-type(2) {
-    position: absolute;
-    top: 5em;
-    right: 0; 
-    height: 30em;
-    width: auto;
-}
-
-.personnage > section > article img:nth-of-type(3) {
-    position: absolute;
-    top: 5em;
-    left: 0; 
-    height: 30em;
-    width: auto;
-}
-
-.personnage > section > article img:nth-of-type(4) {
-    position: absolute;
-    bottom: 0;
-    left: 0; 
-    height: 30em;
-    width: auto;
-}
-
-.personnage > section > article img:nth-of-type(5) {
-    position: absolute;
-    bottom: 0;
-    right: 0; 
-    height: 30em;
-    width: auto;
-}
-
-.personnage > section > article:nth-of-type(2){
-    height: 55em;
-    position: relative;
-
-}
-
-.personnage .zoom {
-    border: none !important ;
-    z-index: 999 !important;
-    display: block;
-    position: absolute !important; 
-    top: 50% !important; 
-    left: 50% !important; 
-    transform: translate(-50%, -50%) !important; 
-    transition: transform 0.2s ease;
-    width: auto !important;
-    height: 50em !important;
-}
-
