@@ -931,3 +931,10 @@ main{ font-family: 'police'; }
         text-align: center;
     }
 }
+/* centrer les images sur la page oeuvre*/
+
+.imageOeuvre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
