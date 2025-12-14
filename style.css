@@ -1,3 +1,4 @@
+
 /* --header --*/
 header {
     background-color: #4D5870;
@@ -176,11 +177,6 @@ body {
 }
 
 /* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- */
-/* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- */
-/* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- *//* ----  oeuvre ---- */
-
-
-
 
 /* Ajout pour le défilement fluide */
 html {
@@ -191,93 +187,6 @@ body {
     background-color: #333;
     margin: 0;
     color: white;
-}
-
-header {
-    background-color: #4D5870;
-    border: 4px solid #c49a6c;
-    border-radius: 30px 30px 0 0;
-    padding: 30px;
-    margin: 30px auto 0 auto;
-    max-width: 1000px;
-}
-
-header > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-header > div > div {
-    display: flex;
-    flex-direction: column;
-}
-
-header > div > div > h1 {
-    margin: 0;
-    font-size: 4.5em;
-    font-weight: normal;
-    letter-spacing: 2px;
-    line-height: 1;
-}
-
-header > div > div > p {
-    margin: 10px 0 0 5px;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #ddd;
-}
-
-header > div > figure {
-    margin: 0;
-}
-
-header > div > figure > img {
-    border-radius: 33px;
-    display: block;
-    width: 250px;
-    height: 200px;
-    object-fit: cover;
-    background-color: #000;
-}
-
-header > nav {
-    width: 100%;
-}
-
-header > nav > ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-}
-
-header > nav > ul > li {
-    flex: 1;
-    border-right: 1px solid rgba(255, 255, 255, 0.6);
-}
-
-header > nav > ul > li:last-child {
-    border-right: none;
-}
-
-header > nav > ul > li > a {
-    display: block;
-    text-align: center;
-    padding: 15px 0;
-    text-decoration: none;
-    color: white;
-    font-family: serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s;
-}
-
-header > nav > ul > li > a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 main {
@@ -387,8 +296,6 @@ body > main > section > nav > a:hover {
     transform: scale(1.2); 
 }
 
-
-
 .oeuvreAmazone.oeuvreAmazone:visited,
 .oeuvreAmazone.oeuvreAmazone:active,
 .oeuvreAmazone.oeuvreAmazone:link {
@@ -405,8 +312,6 @@ body > main > section > nav > a:hover {
 }
 
 
-/* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
-/* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
 /* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- *//* ----  capitale ---- */
 
 /* --- VARIABLES & RESET --- */
@@ -580,15 +485,13 @@ article p span {
     font-weight: bold;
 }
 
-/* --- SECTION HISTOIRE (PLEINE LARGEUR) --- */
-/* C'est ici que j'ai fait le changement pour que ça prenne toute la place */
+/* --- SECTION HISTOIRE --- */
 .histoire article {
     width: 100%;       
     max-width: 100%;   
     margin-bottom: 20px;
 }
 
-/* Séparateur stylé */
 .histoire article:first-of-type::after {
     content: "";
     display: block;
@@ -599,7 +502,7 @@ article p span {
     opacity: 0.3;
 }
 
-/* --- SECTION GÉOGRAPHIE (FLEXBOX) --- */
+/* --- SECTION GÉOGRAPHIE --- */
 .geo-container {
     display: flex;
     flex-wrap: wrap;
@@ -609,7 +512,7 @@ article p span {
 }
 
 .geo-textes {
-    flex: 1 1 400px; /* Le texte prend plus de place que la carte */
+    flex: 1 1 400px; 
 }
 
 .carte-interactive {
@@ -630,7 +533,7 @@ article p span {
 }
 
 .carte-interactive:hover img {
-    transform: scale(1.05); /* Zoom au survol */
+    transform: scale(1.05);
 }
 
 .carte-interactive figcaption {
@@ -641,10 +544,9 @@ article p span {
     font-weight: bold;
 }
 
-/* --- SECTION ACTIVITÉS (GRID LAYOUT) --- */
+/* --- SECTION ACTIVITÉS --- */
 .grille-activites {
     display: grid;
-    /* Grid responsive sans media queries */
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
     padding: 10px;
@@ -796,420 +698,236 @@ footer hr {
     width: auto;
 }
 
-/* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- */
-/* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- */
-/* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- *//* ----  guilhem ---- */
-
-body {
-            background-color: #4D5870;
-            color: white;
-            border: 4px solid #c49a6c;
-            border-radius: 30px;
-            padding: 30px;
-            margin: 30px auto;
-            max-width: 1000px;; 
-        }
-/* --- HEADER --- */
-header {
-    background-color: #4D5870;
-    border: 4px solid #c49a6c;
-    border-radius: 30px;
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 1000px;
-}
-
-/* --- HAUT DU HEADER --- */
-header > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-/* Groupe Titre + Sous-titre */
-header > div > div {
-    display: flex;
-    flex-direction: column;
-}
-
-header > div > div > h1 {
-    margin: 0;
-    font-size: 4.5em;
-    font-weight: normal;
-    letter-spacing: 2px;
-    line-height: 1;
-}
-
-header > div > div > p {
-    margin: 10px 0 0 5px;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #ddd;
-}
-
-/* Image */
-header > div > figure {
-    margin: 0;
-}
-
-header > div > figure > img {
-    border-radius: 33px;
-    display: block;
-    width: 250px; 
-    height: 200px;
-    object-fit: cover;
-    background-color: #000; 
-}
-
-/* --- NAVIGATION --- */
-header > nav {
-    width: 100%;
-}
-
-header > nav > ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-}
-
-header > nav > ul > li {
-    flex: 1;
-    border-right: 1px solid rgba(255, 255, 255, 0.6);
-}
-
-header > nav > ul > li:last-child {
-    border-right: none;
-}
-
-header > nav > ul > li > a {
-    display: block;
-    text-align: center;
-    padding: 15px 0;
-    text-decoration: none;
-    color: white;
-    font-family: serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s;
-}
-
-header > nav > ul > li > a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
 
 
-/* --- FOOTER --- */
-footer {
-    background-color: #4D5870;
-    border: 4px solid #c49a6c;
-    border-radius: 30px;
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 1000px;
-
-}
-
-body>footer>div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-body>footer>div>div {
-    border: 4px solid #c49a6c;
-    border-radius: 33px;
-    width: 450px;
-    height: 140px;
-    align-items: center;
-}
-
-body>footer>div>div>p {
-    padding-left: 10px;
-}
-
-body>footer>div>div>div {
-    padding-left: 90px;
-    display: flex;
-    align-items: end;
-    gap: 8px;
-}
-
-
-body > footer > details > summary
-{
-    padding-top: 7px;
-}
-
-body > footer > details > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-body > footer > details > div > img
-{
-    height: 30px;
-    width: 30px;
-}
-
-/* --- MENU HAMBURGER --- */
-/* Masquer la checkbox */
-#menu-toggle {
-    display: none;
-}
-
-/* Bouton hamburger fixe */
+/* --- MENU HAMBURGER (Original) --- */
+#menu-toggle { display: none; }
 .menu-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #c49a6c;
-    border-radius: 10px;
-    cursor: pointer;
-    z-index: 1001;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    padding: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: fixed; top: 20px; right: 20px; width: 50px; height: 50px;
+    background-color: #c49a6c; border-radius: 10px; cursor: pointer; z-index: 1001;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    gap: 6px; padding: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
-
 .menu-btn:hover {
-    background-color: #d4aa7c;
-    transform: scale(1.05);
+     background-color: #d4aa7c; transform: scale(1.05); 
+}
+.menu-btn span { 
+    display: block; width: 30px; height: 3px; background-color: white; border-radius: 2px; transition: all 0.3s ease; 
 }
 
-/* Les trois traits du hamburger */
-.menu-btn span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-/* Menu déroulant */
 .menu-hamburger {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 250px;
-    height: 100vh;
-    background-color: #4D5870;
-    border-left: 4px solid #c49a6c;
-    z-index: 1000;
-    transition: right 0.3s ease;
-    padding-top: 80px;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed; top: 0; right: -300px; width: 250px; height: 100vh;
+    background-color: #4D5870; border-left: 4px solid #c49a6c; z-index: 1000;
+    transition: right 0.3s ease; padding-top: 80px; box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Afficher le menu quand la checkbox est cochée */
 #menu-toggle:checked ~ .menu-hamburger {
-    right: 0;
+     right: 0; 
 }
-
-/* Style de la liste du menu */
 .menu-hamburger ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+     list-style: none; padding: 0; margin: 0; 
 }
-
-.menu-hamburger ul li {
-    border-bottom: 1px solid rgba(196, 154, 108, 0.3);
-}
-
+.menu-hamburger ul li { border-bottom: 1px solid rgba(196, 154, 108, 0.3); }
 .menu-hamburger ul li a {
-    display: block;
-    padding: 20px 30px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
+    display: block; padding: 20px 30px; color: white; text-decoration: none;
+    font-size: 1.2em; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;
+}
+.menu-hamburger ul li a:hover { background-color: rgba(196, 154, 108, 0.2); padding-left: 40px; }
+.menu-hamburger ul li a:active { background-color: rgba(196, 154, 108, 0.4); }
+
+/* --- POINTEUR HAUT (Original) --- */
+body > main > nav.pointeurHautPage { position: fixed; left: 20px; top: 20px; width: 50px; height: 50px; z-index: 999; }
+body > main > nav.pointeurHautPage > a {
+    display: block; width: 50px; height: 50px; border: 4px solid #c49a6c; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); background-color: transparent; padding: 10px;
+}
+body > main > nav.pointeurHautPage > a > img { width: 30px; height: 30px; object-fit: contain; }
+body > main > nav.pointeurHautPage > a:hover { transform: scale(1.05); border-color: #d4aa7c; }
+
+/* --- Partie Personnage --- */
+.image{ height:355px; width: 540px; }
+.image:hover{ cursor: zoom-in; }
+.zoom{ border: 11px solid black; z-index: 999; display: block; position: fixed; width: 1080px; height: 710px; left: 25em; top: 5em; }
+.zoom:hover{ cursor: zoom-out; }
+.personnage > section > img{ 
+    float:inline-end; height: 10em; width: 10em; }
+.personnage > section > article img:nth-of-type(1) 
+{ position: absolute; top: 12em; left: 17em; height: 25em; width: auto; z-index: 1; }
+.personnage > section > article img:nth-of-type(2) { position: absolute; top: 5em; right: 0; height: 30em; width: auto; }
+.personnage > section > article img:nth-of-type(3) { position: absolute; top: 5em; left: 0; height: 30em; width: auto; }
+.personnage > section > article img:nth-of-type(4) { position: absolute; bottom: 0; left: 0; height: 30em; width: auto; }
+.personnage > section > article img:nth-of-type(5) { position: absolute; bottom: 0; right: 0; height: 30em; width: auto; }
+.personnage > section > article:nth-of-type(2){ height: 55em; position: relative; }
+.personnage .zoom { border: none !important ; z-index: 999 !important; display: block; position: absolute !important; top: 50% !important; left: 50% !important; transform: translate(-50%, -50%) !important; transition: transform 0.2s ease; width: auto !important; height: 50em !important; }
+.personnage > section > article:nth-of-type(4) { margin: 20px; }
+.personnage > section > article:nth-of-type(4) > div { display: flex; justify-content: center; }
+.personnage > section > article:nth-of-type(4) > div > ul { display: flex; justify-content: space-between; list-style-type: none; }
+.personnage > section > article:nth-of-type(4) > div > ul > li { width: 30%; margin-right: 10px; }
+.personnage > section > article:nth-of-type(4) h4 { background-color: #f0f0f0; padding: 10px; border-radius: 5px; }
+
+main{ font-family: 'police'; }
+
+
+/* ==========================================================
+ ACCUEIL
+   ========================================================== */
+
+#Accueil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    background-color: white;
+    color: black;
+}
+
+#Accueil h1, #Accueil h3, #Accueil h4 {
+    color: #4D5870; 
     text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
-.menu-hamburger ul li a:hover {
-    background-color: rgba(196, 154, 108, 0.2);
-    padding-left: 40px;
+#Accueil h4 {
+    border-bottom: 2px solid #c49a6c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-/* Fermer le menu quand on clique sur un lien */
-.menu-hamburger ul li a:active {
-    background-color: rgba(196, 154, 108, 0.4);
+/* -- Section Intro -- */
+#Accueil article.intro {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px dashed #c49a6c;
+    padding-bottom: 20px;
+}
+#Accueil article.intro img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* --- MAIN --- */
-main {
+/* -- Section Géographie -- */
+#Accueil article.geographie {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #c49a6c;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#Accueil article.geographie img {
+    width: 150px;
+    height: auto;
+    display: block;
+    flex-shrink: 0; 
+}
+
+/* Sections Démographie & Pays  */
+#Accueil article.demographie, #Accueil article.pays {
+    width: 48%; 
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Images icones (drapeau, monnaie) */
+#Accueil article.demographie img, #Accueil article.pays img {
+    height: 40px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+}
+#Accueil article.demographie ul, #Accueil article.pays ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+/* -- Section Histoire -- */
+#Accueil article.histoire {
+    width: 100%;
+    margin-top: 20px;
+}
+#Accueil article.histoire ul {
+    border-left: 4px solid #c49a6c;
+    padding-left: 20px;
+    list-style: none;
+}
+#Accueil article.histoire li {
+    margin-bottom: 25px;
     position: relative;
 }
-
-/* Navigation pointeur haut de page */
-body > main > nav.pointeurHautPage {
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    width: 50px;
-    height: 50px;
-    z-index: 999;
+/* Puce personnalisée */
+#Accueil article.histoire li::before {
+    content: "•";
+    color: #c49a6c;
+    font-size: 3em;
+    position: absolute;
+    left: -33px;
+    top: -25px;
+}
+#Accueil article.histoire img {
+    max-height: 150px;
+    width: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
 }
 
-body > main > nav.pointeurHautPage > a {
-    display: block;
-    width: 50px;
-    height: 50px;
+/* -- Section Capitale  -- */
+#Accueil article.capitale {
+    width: 100%;
+    background-color: #4D5870;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+#Accueil article.capitale h4 {
+    color: #c49a6c;
+    border-color: white;
+}
+
+#Accueil article.capitale img {
     border: 4px solid #c49a6c;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    background-color: transparent;
-    padding: 10px;
-}
-
-body > main > nav.pointeurHautPage > a > img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-
-body > main > nav.pointeurHautPage > a:hover {
-    transform: scale(1.05);
-    border-color: #d4aa7c;
-}
-
-/* Zoom sur l'image Amazone woman of the montain avec javascript */
-
-.image{
-    height:355px;
-    width: 540px;
-}
-
-.image:hover{
-    cursor: zoom-in;
-}
-.zoom{
-    border: 11px solid black;
-    z-index: 999;
+    max-width: 80%;
+    height: auto;
     display: block;
-    position: fixed;
-    width: 1080px;
-    height: 710px;
-    left: 25em;
-    top: 5em;
+    margin: 0 auto 15px auto;
+    background-color: transparent; 
+    padding: 0;
+    width: auto; 
 }
 
-.zoom:hover{
-    cursor: zoom-out;
+/* -- Section Economie -- */
+#Accueil article.regiEco {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-left: 10px solid #c49a6c;
+    padding: 15px;
 }
 
-
-/* personage */
-
-.personnage > section > img{ 
-    float:inline-end;
-    height: 10em;
-    width: 10em;
-}
-
-.personnage > section > article img:nth-of-type(1) {
-    position: absolute;
-    top: 12em;
-    left: 17em; 
-    height: 25em;
-    width: auto;
-    z-index: 1;
-}
-.personnage > section > article img:nth-of-type(2) {
-    position: absolute;
-    top: 5em;
-    right: 0; 
-    height: 30em;
-    width: auto;
-}
-
-.personnage > section > article img:nth-of-type(3) {
-    position: absolute;
-    top: 5em;
-    left: 0; 
-    height: 30em;
-    width: auto;
-}
-
-.personnage > section > article img:nth-of-type(4) {
-    position: absolute;
-    bottom: 0;
-    left: 0; 
-    height: 30em;
-    width: auto;
-}
-
-.personnage > section > article img:nth-of-type(5) {
-    position: absolute;
-    bottom: 0;
-    right: 0; 
-    height: 30em;
-    width: auto;
-}
-
-.personnage > section > article:nth-of-type(2){
-    height: 55em;
-    position: relative;
-
-}
-
-.personnage .zoom {
-    border: none !important ;
-    z-index: 999 !important;
-    display: block;
-    position: absolute !important; 
-    top: 50% !important; 
-    left: 50% !important; 
-    transform: translate(-50%, -50%) !important; 
-    transition: transform 0.2s ease;
-    width: auto !important;
-    height: 50em !important;
-}
-
-.personnage > section > article:nth-of-type(4) {
-    margin: 20px;                     
-}
-
-.personnage > section > article:nth-of-type(4) > div {
-    display: flex;                   
-    justify-content: center;         
-}
-
-.personnage > section > article:nth-of-type(4) > div > ul {
-    display: flex;                    
-    justify-content: space-between;   
-    list-style-type: none;            
-}
-
-.personnage > section > article:nth-of-type(4) > div > ul > li {
-    width: 30%;                      
-    margin-right: 10px;              
-}
-
-.personnage > section > article:nth-of-type(4) h4 {
-    background-color: #f0f0f0;    
-    padding: 10px;                 
-    border-radius: 5px;            
-}
-
-main{
-    font-family: 'police';
+/* -- Responsive Mobile -- */
+@media (max-width: 768px) {
+    #Accueil article.demographie, #Accueil article.pays {
+        width: 100%;
+    }
+    #Accueil article.geographie {
+        flex-direction: column;
+        text-align: center;
+    }
 }
