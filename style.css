@@ -533,7 +533,7 @@ article p span {
 }
 
 .carte-interactive:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .carte-interactive figcaption {
@@ -940,5 +940,19 @@ main{ font-family: 'police'; }
 .imageOeuvre {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+
+.imageOeuvre  figcaption{
+    height: 15em;
+}
+
+a:visited, 
+a:hover,
+a:active,
+a:link{
+    color:white;
+    text-decoration: none;
 }
