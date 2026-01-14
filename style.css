@@ -1092,11 +1092,10 @@ a:link{
 
     body > footer > div > figure {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 10px;
     }
-
     /* --- 5. AJUSTEMENTS GLOBAUX --- */
     /* Empêche les images de déborder de l'écran */
     img {
