@@ -635,6 +635,7 @@ footer {
     padding: 15px 25px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .contact-box p {
@@ -971,22 +972,21 @@ a:link{
         border-radius: 15px;
     }
 
-    /* On empile le titre et l'image verticalement */
     header > div {
-        flex-direction: column-reverse; /* L'image passe au-dessus ou en dessous selon préférence */
+        flex-direction: column-reverse;
         gap: 20px;
         text-align: center;
     }
 
     header > div > div > h1 {
-        font-size: 2.5em; /* Réduction drastique de la taille du titre */
+        font-size: 2.5em;
     }
 
     header > div > figure > img {
         width: 120px;
         height: 120px;
-        margin: 0 auto; /* Centrage de l'image */
-        border-radius: 50%; /* Image ronde sur mobile pour le style */
+        margin: 0 auto;
+        border-radius: 50%;
     }
 
     /* CACHER la barre de navigation PC */
@@ -995,19 +995,20 @@ a:link{
     }
 
     /* AFFICHER le bouton Hamburger */
-    #menu-toggle { display: none; } /* La checkbox reste cachée mais fonctionnelle */
+    #menu-toggle { display: none; }
     .menu-btn {
-        display: flex; /* On s'assure que le bouton est visible */
+        display: flex;
         top: 15px;
         right: 15px;
-        background-color: #4D5870; /* Fond pour visibilité */
+        background-color: #4D5870;
     }
 
     /* --- 2. MAIN & CONTENU --- */
     main {
         padding: 15px;
         margin: 10px;
-        border-width: 2px; /* Bordure plus fine */
+        border-width: 2px;
+        border-radius: 15px;
     }
 
     main > h1 {
@@ -1023,7 +1024,7 @@ a:link{
     #Accueil article.demographie, 
     #Accueil article.pays,
     #Accueil article.geographie {
-        width: 100%; /* Pleine largeur */
+        width: 100%;
         flex-direction: column;
         text-align: center;
     }
@@ -1033,9 +1034,9 @@ a:link{
     }
 
     /* --- 3. PAGE PERSONNAGE (Gestion complexe) --- */
-    /* On annule le positionnement absolu pour éviter que les images sortent de l'écran */
+  
     .personnage > section > article {
-        height: auto !important; /* On retire la hauteur fixe de 55em */
+        height: auto !important;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1048,13 +1049,12 @@ a:link{
     .personnage > section > article img:nth-of-type(3),
     .personnage > section > article img:nth-of-type(4),
     .personnage > section > article img:nth-of-type(5) {
-        position: static; /* Annule le positionnement absolute */
-        width: 80%; /* Largeur fluide */
+        position: static;
+        width: 80%;
         height: auto;
         margin: 0;
     }
     
-    /* Adaptation de la liste de stats */
     .personnage > section > article:nth-of-type(4) > div > ul {
         flex-direction: column;
         align-items: center;
@@ -1069,43 +1069,44 @@ a:link{
     footer {
         padding: 20px;
         margin: 10px;
+        border-radius: 15px;
     }
 
     body > footer > div {
-        flex-direction: column; /* Empilement vertical */
+        flex-direction: column;
         gap: 20px;
     }
 
     body > footer > div > div {
         width: 100%;
-        height: auto; /* Hauteur automatique */
+        height: auto;
         padding: 15px;
         text-align: center;
     }
 
-    /* Réalignement des logos dans le footer */
-    body > footer > div > div > div {
+    .contact-box {
+        display: flex;
+        flex-direction: row;
         padding-left: 0;
         justify-content: center;
         margin-top: 10px;
     }
 
-    body > footer > div > figure {
+    .partenaires {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
+        
     }
-    /* --- 5. AJUSTEMENTS GLOBAUX --- */
-    /* Empêche les images de déborder de l'écran */
-    img {
+
+    body > footer > div > figure > img {
         max-width: 100%;
         height: auto;
     }
-    
-    /* Réduction des paddings des listes */
+
     body > main > section > ul {
-        font-size: 1.2em; /* Police plus petite pour les listes */
+        font-size: 1.2em;
         width: 100%;
     }
 }
