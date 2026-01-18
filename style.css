@@ -527,7 +527,9 @@ article p span {
 
 .carte-interactive img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 700px;
     display: block;
     transition: transform 0.5s ease;
 }
@@ -543,6 +545,8 @@ article p span {
     padding: 8px;
     font-weight: bold;
 }
+
+
 
 /* --- SECTION ACTIVITÉS --- */
 .grille-activites {
@@ -703,7 +707,7 @@ footer hr {
 #menu-toggle { display: none; }
 .menu-btn {
     position: fixed; top: 20px; right: 20px; width: 50px; height: 50px;
-    background-color: rgba(0,0,0,0); border-radius: 10px; cursor: pointer; z-index: 1001;
+    background-color: transparent; border-radius: 10px; cursor: pointer; z-index: 1001;
     display: flex; flex-direction: column; justify-content: center; align-items: center;
     gap: 6px; padding: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     border: 4px solid #c49a6c;
@@ -737,7 +741,7 @@ footer hr {
 .menu-hamburger ul li a:active { background-color: rgba(196, 154, 108, 0.4); }
 
 /* --- POINTEUR HAUT  --- */
-body > main > nav.pointeurHautPage { position: fixed; left: 20px; top: 20px; width: 50px; height: 50px; z-index: 999; }
+body > main > nav.pointeurHautPage { position: fixed; left: 20px; top: 20px; width: 50px; height: 50px; z-index: 1000; }
 body > main > nav.pointeurHautPage > a {
     display: block; width: 50px; height: 50px; border: 4px solid #c49a6c; border-radius: 10px;
     display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;
@@ -750,8 +754,6 @@ body > main > nav.pointeurHautPage > a:hover { transform: scale(1.05); border-co
 
 .image{ height:355px; width: 540px; }
 .image:hover{ cursor: zoom-in; }
-.zoom{ border: 11px solid black; z-index: 999; display: block; position: fixed; width: 1080px; height: 710px; left: 25em; top: 5em; }
-.zoom:hover{ cursor: zoom-out; }
 .personnage > section > img{ 
     float:inline-end; height: 10em; width: 10em; }
 .personnage > section > article img:nth-of-type(1) 
@@ -927,6 +929,10 @@ main{ font-family: 'police'; }
     padding: 15px;
 }
 
+/*-- ZOOM -- */
+.zoom{ border: 11px solid black; z-index: 999; display: block; position: fixed; width: 100%; height: 50%; left: 24%; top: 20%; }
+.zoom:hover{ cursor: zoom-out; }
+
 /* -- Responsive -- */
 @media (max-width: 768px) {
     #Accueil article.demographie, #Accueil article.pays {
@@ -995,14 +1001,14 @@ a:link{
     }
 
     /* AFFICHER le bouton Hamburger */
-    #menu-toggle { display: none; }
-    .menu-btn {
+    #menu-toggle { display: none;}
+    .menu-btn, body > main > nav.pointeurHautPage > a {
         display: flex;
         top: 15px;
         right: 15px;
         background-color: #4D5870;
     }
-
+    
     /* --- 2. MAIN & CONTENU --- */
     main {
         padding: 15px;
@@ -1109,4 +1115,13 @@ a:link{
         font-size: 1.2em;
         width: 100%;
     }
+
+    .carte-interactive img {
+    width: 100%;
+    height: 50%;
+    max-height: 700px;
+    }
+
+    .zoom{ border: 11px solid black; z-index: 999; display: block; position: fixed; width: 100%; height: 50%; left: 0%; top: 20%; }
+
 }
